@@ -1,0 +1,61 @@
+* {
+    margin: 5px;
+    padding: 6px;
+}
+
+.card {
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h1 h1"
+    "p p"
+    "age age"
+    "iframe iframe"
+    "img img";
+}
+
+h1 {
+    grid-area: h1;
+    font-family: "Guardian-Bold", sans-serif;
+    font-size: 54px;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.p {
+    grid-area: plot;
+    border: 3px solid black
+}
+
+.age {
+    grid-area: age;
+    text-align: center;
+}
+
+iframe {
+    grid-area: iframe;
+    image-resolution: from-image;
+    display: block;
+    margin-left: ;
+    margin-right: auto;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+img {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    grid-area: img;
+}
+
+.container {
+    background-color: slategrey;
+}
